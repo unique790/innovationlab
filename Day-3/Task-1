@@ -2,7 +2,7 @@
 function greet(name) {
     console.log(Hello, ${name}!);
 }
-greet("Vinisha");
+greet("Ravi Bharathi");
 
 function addNumbers(...nums) {
     let sum = 0;
