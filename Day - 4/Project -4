@@ -1,0 +1,24 @@
+let students = [
+  { name: "alice", score: 87.4 },
+  { name: "bob", score: 59.2 },
+  { name: "charlie", score: 72.9 }
+];
+students.forEach(student => {
+  student.score = Math.round(student.score);
+});
+students = students.map(student => {
+  let capitalized = student.name[0].toUpperCase() + student.name.slice(1);
+  return { ...student, name: capitalized };
+});
+students.forEach(student => {
+  console.log(`${student.name}: ${student.score}`);
+});
+let statusList = students.map(student => {
+  return student.score >= 60 ? "Pass" : "Fail";
+});
+console.log("Statuses:", statusList);
+for (let student of students) {
+  if (student.score >= 60) {
+    console.log(`Congratulations ${student.name} for passing!`);
+  }
+}
