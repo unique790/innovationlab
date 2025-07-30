@@ -1,0 +1,10 @@
+ Array Creation and Basic Operations
+
+
+let fruits = ["apple", "banana", "mango"];
+console.log(fruits.length); 
+fruits.push("orange"); 
+fruits.pop(); 
+fruits.unshift("grape"); 
+fruits.shift(); 
+console.log(fruits); 
