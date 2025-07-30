@@ -1,0 +1,13 @@
+ Array Iteration and Loops
+let nums = [2, 4, 6, 8];
+nums.forEach((num) => {
+  console.log("forEach value:", num);
+});
+let squares = nums.map((n) => n * n);
+console.log("Squares:", squares);
+for (let index in nums) {
+  console.log("for-in index:", index, "value:", nums[index]);
+}
+for (let value of nums) {
+  console.log("for-of value:", value);
+}
